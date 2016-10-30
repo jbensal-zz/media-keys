@@ -1,1 +1,1 @@
-# media-keys
+# A simple Chrome extension that helps you play/pause and skip to next track on Pandora's Web Player.

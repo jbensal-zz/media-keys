@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "MediaKeys for Pandora",
+  "description": "This extension allows you to use your media keys on the web player for Pandora.com",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "tabs", 
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "commands": {
+    "play-pause": {
+      "suggested_key": {
+        "default": "MediaPlayPause",
+        "mac": "MediaPlayPause"
+      },
+      "description": "Plays or pauses music on Pandora.",
+      "global": true
+    },
+
+    "next-track": {
+      "suggested_key": {
+        "default": "MediaNextTrack",
+        "mac": "MediaNextTrack"
+      },
+      "description": "Skips to next track on Pandora.",
+      "global": true
+    }
+
+  }
+}
